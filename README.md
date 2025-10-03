@@ -38,3 +38,11 @@ webcraft-frontend/
 │       └── hero-bg.jpg
 └── README.md
 ```
+
+## Validation W3C
+
+Les trois fichiers HTML du projet respectent les normes W3C. Voici les preuves de validation :
+
+![Validation W3C - Contact](w3c validation contact.png)
+![Validation W3C - Index](w3c validation index.png)
+![Validation W3C - About](w3c validation about.png)
