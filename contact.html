@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - WebCraft Solutions</title>
+    <meta name="description" content="Contactez WebCraft Solutions pour vos projets web et mobile. Devis gratuit et accompagnement personnalisé">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/logo-webcraft.png" alt="WebCraft Solutions Logo" class="logo-icon" width="40" height="40">
+                <h1><a href="index.html">WebCraft Solutions</a></h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="about.html" class="nav-link">À propos</a></li>
+                    <li><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section Contact Hero -->
+        <section class="contact-hero">
+            <div class="container">
+                <h2 class="hero-title">Contactez-nous</h2>
+                <p class="hero-subtitle">
+                    Prêt à donner vie à votre projet ? Notre équipe vous accompagne de l'idée à la réalisation.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section Formulaire de Contact -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Parlons de votre projet</h3>
+                        <p>
+                            Que vous ayez besoin d'un site vitrine, d'une application mobile ou d'une plateforme e-commerce,
+                            nous sommes là pour vous conseiller et créer la solution parfaite pour vos besoins.
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-text">
+                                    <strong>Email</strong>
+                                    <p>contact@webcraft.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📱</div>
+                                <div class="contact-text">
+                                    <strong>Téléphone</strong>
+                                    <p>+33 9 87 65 43 21</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-text">
+                                    <strong>Adresse</strong>
+                                <p>123 Avenue bimbam<br>75001 Paris, France</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">⏰</div>
+                                <div class="contact-text">
+                                    <strong>Horaires</strong>
+                                    <p>Lun-Ven : 9h00 - 18h00<br>Réponse sous 24h</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-container">
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <h3>Envoyez-nous un message</h3>
+
+                            <!-- Message de statut -->
+                            <div id="form-messages" class="form-messages" style="display: none;" role="alert"></div>
+
+                            <div class="form-group">
+                                <label for="name" class="form-label">Nom complet *</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    class="form-input"
+                                    required
+                                    aria-describedby="name-error"
+                                    autocomplete="name"
+                                >
+                                <div id="name-error" class="error-message" role="alert"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Adresse e-mail *</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="form-input"
+                                    required
+                                    aria-describedby="email-error"
+                                    autocomplete="email"
+                                >
+                                <div id="email-error" class="error-message" role="alert"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Téléphone</label>
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    class="form-input"
+                                    aria-describedby="phone-error"
+                                    autocomplete="tel"
+                                >
+                                <div id="phone-error" class="error-message" role="alert"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Sujet</label>
+                                <select id="subject" name="subject" class="form-select">
+                                    <option value="">Choisir un sujet</option>
+                                    <option value="site-vitrine">Site vitrine</option>
+                                    <option value="e-commerce">E-commerce</option>
+                                    <option value="app-mobile">Application mobile</option>
+                                    <option value="refonte">Refonte de site</option>
+                                    <option value="maintenance">Maintenance</option>
+                                    <option value="autre">Autre demande</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget" class="form-label">Budget prévisionnel</label>
+                                <select id="budget" name="budget" class="form-select">
+                                    <option value="">Non défini</option>
+                                    <option value="moins-5k">Moins de 5 000€</option>
+                                    <option value="5k-10k">5 000€ - 10 000€</option>
+                                    <option value="10k-25k">10 000€ - 25 000€</option>
+                                    <option value="25k-50k">25 000€ - 50 000€</option>
+                                    <option value="plus-50k">Plus de 50 000€</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    class="form-textarea"
+                                    rows="5"
+                                    required
+                                    aria-describedby="message-error"
+                                    placeholder="Décrivez votre projet, vos besoins et vos objectifs..."
+                                ></textarea>
+                                <div id="message-error" class="error-message" role="alert"></div>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="consent" name="consent" required>
+                                    <span class="checkbox-custom"></span>
+                                    J'accepte d'être recontacté concernant ma demande *
+                                </label>
+                                <div id="consent-error" class="error-message" role="alert"></div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn-submit" id="submit-btn">
+                                    <span class="btn-text">Envoyer le message</span>
+                                    <span class="btn-loader" style="display: none;">Envoi en cours...</span>
+                                </button>
+                                <p class="form-note">* Champs obligatoires</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section CTA -->
+        <section class="contact-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h3>Vous préférez nous appeler ?</h3>
+                    <p>Notre équipe est disponible pour répondre à toutes vos questions</p>
+                    <a href="tel:+33123456789" class="cta-phone">📞 +33 1 23 45 67 89</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WebCraft Solutions</h3>
+                    <p>Votre partenaire digital depuis 2020</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 contact@webcraft-solutions.fr</p>
+                    <p>📱 +33 1 23 45 67 89</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn" class="social-link">LinkedIn</a>
+                        <a href="#" aria-label="Twitter" class="social-link">Twitter</a>
+                        <a href="#" aria-label="GitHub" class="social-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 WebCraft Solutions. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/contact.js"></script>
+</body>
+</html>

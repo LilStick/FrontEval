@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebCraft Solutions - Portfolio</title>
+    <meta name="description" content="Portfolio de l'agence WebCraft Solutions - Découvrez nos projets web et mobile">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/logo-webcraft.png" alt="WebCraft Solutions Logo" class="logo-icon" width="40" height="40">
+                <h1>WebCraft Solutions</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active" aria-current="page">Accueil</a></li>
+                    <li><a href="about.html" class="nav-link">À propos</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section Hero -->
+        <section class="hero" role="main">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">Créons ensemble votre présence digitale</h2>
+                    <p class="hero-subtitle">
+                        WebCraft Solutions, votre agence spécialisée dans le développement web et mobile.
+                        Découvrez nos réalisations innovantes pour nos clients.
+                    </p>
+                    <a href="#portfolio" class="cta-button" role="button">Découvrir nos projets</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Portfolio -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-title">Nos Réalisations</h2>
+
+                <!-- Loader -->
+                <div id="loader" class="loader" role="status" aria-label="Chargement des projets">
+                    <div class="loader-spinner"></div>
+                    <p>Chargement des projets...</p>
+                </div>
+
+                <!-- Message d'erreur -->
+                <div id="error-message" class="error-message" style="display: none;" role="alert">
+                    <p>Une erreur est survenue lors du chargement des projets. Veuillez réessayer.</p>
+                    <button id="retry-button" class="retry-button">Réessayer</button>
+                </div>
+
+                <!-- Filtres -->
+                <div class="filters" style="display: none;">
+                    <h3>Filtrer par technologie :</h3>
+                    <div id="filter-buttons" class="filter-buttons" role="group" aria-label="Filtres par technologie">
+                        <button class="filter-btn active" data-technology="all">Toutes</button>
+                    </div>
+                </div>
+
+                <!-- Grille de projets -->
+                <div id="projects-grid" class="projects-grid" style="display: none;">
+                    <!-- Les projets seront chargés ici par JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WebCraft Solutions</h3>
+                    <p>Votre partenaire digital depuis 2020</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn" class="social-link">LinkedIn</a>
+                        <a href="#" aria-label="Twitter" class="social-link">Twitter</a>
+                        <a href="#" aria-label="GitHub" class="social-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 WebCraft Solutions. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal pour les détails du projet -->
+    <div id="project-modal" class="modal" role="dialog" aria-hidden="true">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fermer le modal">&times;</button>
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
